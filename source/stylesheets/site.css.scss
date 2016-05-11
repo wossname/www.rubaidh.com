@@ -23,7 +23,7 @@ body {
 ------------------------------------*/
 /*Border Top*/
 .coming-soon-border {
-	border-top: solid 3px #72c02c;
+	border-top: solid 3px #a10f2b;
 }
 
 /*Background Cover*/
@@ -34,7 +34,7 @@ body {
 	content: " ";
 	height: 100%;
 	position: absolute;
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.8);
 }
 
 /*Content*/
@@ -49,7 +49,8 @@ body {
 }
 
 .coming-soon h1,
-.coming-soon p {
+.coming-soon p,
+.coming-soon ul {
 	color: #fff;
 }
 

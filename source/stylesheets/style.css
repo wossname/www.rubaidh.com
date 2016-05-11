@@ -38,7 +38,7 @@ p,
 li,
 li a,
 label {
- color: #555;
+ /* color: #555; */
 }
 
 a {
