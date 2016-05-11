@@ -1,20 +1,53 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
   <head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title><%= current_page.data.title || "Rubaidh Ltd: Scottish for Ruby on Rails" %></title>
+
+    <!-- Meta -->
     <meta charset="utf-8">
-    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Middleman" %></title>
-
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
 
     <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>
   </head>
 
-  <body class="<%= page_classes %>">
+  <body class="coming-soon-page <%= page_classes %>">
     <%= yield %>
+
+    <!--=== Sticky Footer ===-->
+    <div class="sticky-footer">
+      <p class="copyright-space">
+        Copyright  &copy; 2006-2016 <%= link_to 'Wossname Industries', 'https://woss.name/' %>. All rights reserved.
+      </p>
+    </div>
+    <!--=== End Sticky-Footer ===-->
+
+    <!-- JS Global Compulsory -->
+    <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script type="text/javascript" src="/javascripts/back-to-top.js"></script>
+    <script type="text/javascript" src="/javascripts/smoothScroll.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.backstretch.min.js"></script>
+    <!-- JS Customization -->
+    <script type="text/javascript" src="/javascripts/custom.js"></script>
+    <!-- JS Page Level -->
+    <script type="text/javascript" src="/javascripts/app.js"></script>
+
+    <%= javascript_include_tag :all %>
+
+    <!--[if lt IE 9]>
+    <script src="/javascripts/respond.js"></script>
+    <script src="/javascripts/html5shiv.js"></script>
+    <script src="/javascripts/placeholder-IE-fixes.js"></script>
+    <![endif]-->
+
   </body>
 </html>

@@ -1,67 +1,113 @@
 @charset "utf-8";
-@import "normalize";
+
+@import '//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin';
+
+// Global styles
+@import "style.css";
+
+// Plugins
+@import "bootstrap.min.css";
+@import "animate.css";
+@import "line-icons.css";
+@import "font-awesome.min.css";
+
+/*Wrapping element for Sticky-Footer*/
+html {
+	height: 100%;
+}
 
 body {
-  background: #ECC561;
-  text-align: center;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+ 	min-height: 100%;
+ 	position: relative;
 }
 
-.logo img {
-  height: 18.75em;
-  margin-top: 6em;
+/*Coming Soon Page
+------------------------------------*/
+/*Border Top*/
+.coming-soon-border {
+	border-top: solid 3px #72c02c;
 }
 
-h1 {
-  color: rgba(0,0,0,0.5);
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.8em;
-  font-weight: 400;
-  margin: 0;
+/*Background Cover*/
+.coming-soon-bg-cover:before {
+	top: 0;
+	z-index: -1;
+	width: 100%;
+	content: " ";
+	height: 100%;
+	position: absolute;
+	background: rgba(0,0,0,0.5);
 }
 
-.doc {
-  margin: 3em 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-
-  a {
-    border: 1px solid white;
-    border-radius: 3px;
-    padding: 0.75em 0.7em;
-    color: white;
-    text-decoration: none;
-    transition: color 0.1s linear;
-    &:hover {
-      background: rgba(0,0,0,0.2);
-      color: white;
-      transition: all 0.15s linear;
-    }
-  }
+/*Content*/
+.coming-soon-page {
+	background: #585f69;
 }
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s;
+.coming-soon,
+.coming-soon-plugin {
+	padding: 20px;
+	text-align: center;
 }
 
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
+.coming-soon h1,
+.coming-soon p {
+	color: #fff;
 }
+
+.coming-soon h1 {
+	font-size: 55px;
+	font-weight: 600;
+	line-height: 65px;
+	margin-bottom: 15px;
+}
+
+.coming-soon h2 {
+	color: #fff;
+	font-size: 55px;
+	font-weight: 600;
+	line-height: 65px;
+	margin-bottom: 15px;
+}
+
+.coming-soon p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+}
+
+/* Small devices (tablets, 768px and less) */
+@media (max-width: 768px) {
+	.coming-soon h1 {
+		font-size: 40px;
+	}
+
+	.coming-soon p {
+		font-size: 14px;
+	}
+}
+
+.form-control {
+	border: none;
+}
+
+/*Sticky-Footer
+------------------------------------*/
+.sticky-footer {
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 20px;
+	position: absolute;
+}
+.sticky-footer .copyright-space {
+	color: #fff;
+	text-align: center;
+}
+@media (max-height: 800px) {
+	.sticky-footer {
+		position: static;
+	}
+}
+
+@import "dark-red.css";
