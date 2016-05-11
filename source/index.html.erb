@@ -7,7 +7,10 @@ title: 'Rubaidh Ltd: Scottish for Ruby on Rails'
 <div class="container cooming-soon-content valign__middle">
   <div class="row" style="text-align: center">
     <div class="col-md-3 col-md-offset-2" style="padding-top: 62px">
-      <a href="https://www.rubaidh.com/" title="Rubaidh Ltd: Scottish for Ruby on Rails"><%= image_tag 'rubaidh.png', alt: 'Rubaidh Ltd: Scottish for Ruby on Rails' %></a>
+      <% utm_link_to 'https://www.rubaidh.com', content: 'Rubaidh Logo', title: 'Rubaidh Ltd: Scottish for Ruby on Rails' do %>
+        <%= image_tag 'rubaidh.png', alt: 'Rubaidh Ltd: Scottish for Ruby on Rails' %>
+      <% end %>
+      </a>
     </div>
     <div class="col-md-2" style="color: #fff; font-weight: bold; font-size: 72px">
       <div class="visible-md-block visible-lg-block" style="padding-top: 50px">
@@ -18,7 +21,9 @@ title: 'Rubaidh Ltd: Scottish for Ruby on Rails'
       </div>
     </div>
     <div class="col-md-3">
-      <a href="https://woss.name/" title="Wossname Industries"><%= image_tag 'wossname-industries.png', alt: 'Wossname Industries' %></a>
+      <% utm_link_to 'https://woss.name/', content: 'Wossname Industries Logo', title: 'Wossname Industries' do %>
+        <%= image_tag 'wossname-industries.png', alt: 'Wossname Industries' %>
+      <% end %>
     </div>
   </div>
 
@@ -59,7 +64,7 @@ title: 'Rubaidh Ltd: Scottish for Ruby on Rails'
       <ul>
         <li>
           <p>
-            <%= link_to 'Wossname Industries', 'https://woss.name/' %> is
+            <%= utm_link_to 'Wossname Industries', 'https://woss.name/' %> is
             Graeme's new consulting company. It's exploring the intersection on
             technology and mental health. Go check them out, and sign up to
             hear more!
@@ -68,7 +73,7 @@ title: 'Rubaidh Ltd: Scottish for Ruby on Rails'
 
         <li>
           <p>
-            <%= link_to 'A Sneak Peek at The Internet', 'https://the-internet.io/' %>
+            <%= utm_link_to 'A Sneak Peek at The Internet', 'https://the-internet.io/' %>
             is the book that Graeme has always wished existed, so that all
             software developers can have a more holistic understanding of the
             workings of The Internet. He's given up waiting on somebody else
@@ -82,7 +87,7 @@ title: 'Rubaidh Ltd: Scottish for Ruby on Rails'
             out a domain we registered a while ago, and is sneakily using it to
             promote himself. He's gone from being <em>Scottish</em> for Ruby on
             Rails to being
-            <%= link_to 'British for Ruby on Rails',  'https://www.rubyonrails.co.uk/' %>.
+            <%= utm_link_to 'British for Ruby on Rails',  'https://www.rubyonrails.co.uk/' %>.
             Clever, huh?
           </p>
         </li>

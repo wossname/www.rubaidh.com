@@ -10,7 +10,7 @@ config[:cloudfront_distribution] = 'E1STMQ3FOGJ7AN'
 # UTM-related bits
 config[:default_utm_source] = config[:domain]
 config[:default_utm_medium] = 'website'
-config[:default_utm_campaign] = 'Other Projects'
+config[:default_utm_campaign] = 'Rubaidh'
 
 # Per-page layout changes:
 #
