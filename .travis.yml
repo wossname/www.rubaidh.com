@@ -1,0 +1,10 @@
+language: ruby
+cache:
+  bundler: true
+  apt: true
+  directories:
+    - build
+script: bundle exec rake deploy
+branches:
+  only:
+    - master
