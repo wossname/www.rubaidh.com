@@ -4,7 +4,7 @@
 
 config[:domain] = 'rubaidh.com'
 config[:hostname] = "www.#{config[:domain]}"
-config[:url] = "https://#{config[:hostname]}/"
+config[:url] = "https://#{config[:hostname]}"
 config[:cloudfront_distribution] = 'E1STMQ3FOGJ7AN'
 
 # UTM-related bits
