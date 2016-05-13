@@ -3,8 +3,11 @@ cache:
   bundler: true
   apt: true
   directories:
-    - build
+  - build
 script: bundle exec rake deploy
 branches:
   only:
-    - master
+  - master
+notifications:
+  slack:
+    secure: "+BUrqkAmdyHPjGRYYyQWvovdGbayEtbu7URHXbHD+kJeOYnN2fNuas479f0JSw5TKbQMfDpxiurhcBKf0LtR4KYkej7aoDYNsm0FmQG9b5eqO8+LUilMt7+TGEiAltM0jp6f3mvuOkp9xhropCkoEdaanIFuxkAMtn56TeRa736EKJuTtVeOHE0BPQyFU3DrGF7yY1o+VtFYYbQJki3FApcywpxJUxbKm6vovfCorKNzSGcc+VFJtTCFaaSppLBbSo3yYUhjx6a1loeHmE259096N9Np/ZjzHYUd8VI8QjjYjfUMfRMK25Pwtk12E+M/FuZI126VqobLHU7628BWo85tnlLaskyQTW5MST9ao2HC9uMftFbYWdk/m/u3AUUcVNSV7LHYnOdnxutRD8nnVKzcbQSBVAec07/Q8kCxB544nE/arfBHENAzX3ZLGS+BtONWSopTNnMbxY6qR2yV7byFLz9a9l10AghfzF1ENyHYRI1vnoqOWKGGVPQX/OzHlCIqGKruTi5b7X1b9lCNOicU1GveYVanWbXds91ASJtu5UgHSr9BPZc6QC7jqelmcxWOa6Y7KW4tA/h21IO54ebPe90xnPI5E6uOfG1ugrd6Z5SrInrBAztrRF7X6BqK6/eMjmHFgSNBi60gNoOqHDeLnH8kk6tf7BcaVUjyiz0="
