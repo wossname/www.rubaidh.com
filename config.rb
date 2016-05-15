@@ -4,7 +4,7 @@ config[:www_prefix]              = true
 config[:cloudfront_distribution] = 'E1STMQ3FOGJ7AN'
 config[:twitter_owner]           = 'rubaidh'
 config[:twitter_creator]         = 'mathie'
-config[:fb_app_id]               = ''
+config[:fb_app_id]               = '243328680374'
 
 # Generic metadata
 config[:short_title]   = 'Rubaidh Ltd'
@@ -12,10 +12,18 @@ config[:long_title]    = "#{config[:short_title]}: Scottish for Ruby on Rails"
 config[:description]   = "Rubaidh was a software development consultancy specialising in Ruby on Rails development."
 config[:company]       = 'Wossname Industries'
 config[:company_url]   = 'https://woss.name/'
+config[:telephone]     = '+44 (0)7949 077744'
 config[:site_category] = "Software Development"
 config[:site_tags]     = ['Ruby', 'Rails', 'Ruby on Rails', 'Software Development',
                           'Consultancy', 'Freelance', 'Contractor', 'Design',
                           'Deployment', 'Scotland', 'Scottish']
+
+config[:related] = {
+  facebook: 'https://www.facebook.com/rubaidh',
+  twitter:  "https://twitter.com/#{config[:twitter_owner]}",
+  google:   'https://plus.google.com/105815596210921819804',
+  linkedin: 'https://www.linkedin.com/company/200872'
+}
 
 # UTM-related bits
 config[:default_utm_medium]   = 'website'

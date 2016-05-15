@@ -20,5 +20,10 @@
 
 <link rel="canonical" href="<%= url_meta %>">
 
+<% config[:related].each do |_, url| %>
+  <link rel="me" href="<%= url %>">
+<% end %>
+
 <%= partial 'metadata/facebook' %>
 <%= partial 'metadata/twitter' %>
+<%= partial 'metadata/schema' %>
