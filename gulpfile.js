@@ -11,8 +11,6 @@ var javascripts = {
     'assets/javascripts/jquery.min.js',
     'assets/javascripts/jquery-migrate.min.js',
     'assets/javascripts/bootstrap.min.js',
-    'assets/javascripts/back-to-top.js',
-    'assets/javascripts/smoothScroll.js',
     'assets/javascripts/jquery.backstretch.min.js',
     'assets/javascripts/custom.js',
     'assets/javascripts/app.js',
