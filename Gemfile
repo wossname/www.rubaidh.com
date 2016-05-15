@@ -19,3 +19,4 @@ gem 'rake'
 # Deployment
 gem 'middleman-cloudfront', github: 'andrusha/middleman-cloudfront'
 gem 'middleman-s3_sync'
+gem 'mime-types'
