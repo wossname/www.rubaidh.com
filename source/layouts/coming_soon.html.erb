@@ -1,10 +1,36 @@
-
 <% wrap_layout :layout do %>
   <div class="coming-soon-border"></div>
   <div class="coming-soon-bg-cover"></div>
 
   <div class="container cooming-soon-content">
-    <%= yield %>
+    <div class="row" style="text-align: center; margin-top: 40px">
+      <div class="col-md-3 col-md-offset-2" style="padding-top: 62px">
+        <% utm_link_to 'https://www.rubaidh.com', content: 'Rubaidh Logo', title: 'Rubaidh Ltd: Scottish for Ruby on Rails' do %>
+          <%= image_tag 'rubaidh.png', alt: 'Rubaidh Ltd: Scottish for Ruby on Rails' %>
+        <% end %>
+      </div>
+
+      <div class="col-md-2" style="color: #fff; font-weight: bold; font-size: 72px">
+        <div class="visible-md-block visible-lg-block" style="padding-top: 50px">
+          &rarr;
+        </div>
+        <div class="visible-xs-block visible-sm-block" style="padding: 15px 10px">
+          &darr;
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <% utm_link_to 'https://woss.name/', content: 'Wossname Industries Logo', title: 'Wossname Industries' do %>
+          <%= image_tag 'wossname-industries.png', alt: 'Wossname Industries' %>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="coming-soon">
+      <h1>So long, and thanks for all the fish!</h1>
+
+      <%= yield %>
+    </div>
   </div>
 
   <div class="container coming-soon">
