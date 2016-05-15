@@ -1,14 +1,5 @@
 @charset "utf-8";
 
-@import '//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin';
-
-// Global styles
-@import "style.css";
-
-// Plugins
-@import "bootstrap.min.css";
-@import "animate.css";
-
 /*Wrapping element for Sticky-Footer*/
 html {
 	height: 100%;

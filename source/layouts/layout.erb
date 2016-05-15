@@ -13,7 +13,7 @@
 
     <% partial 'favicons' %>
 
-    <%= stylesheet_link_tag :site %>
+    <%= stylesheet_link_tag :all %>
   </head>
 
   <body class="coming-soon-page <%= page_classes %>">
@@ -35,25 +35,10 @@
       </p>
     </div>
 
-    <!-- JS Global Compulsory -->
-    <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery-migrate.min.js"></script>
-    <script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
-    <!-- JS Implementing Plugins -->
-    <script type="text/javascript" src="/javascripts/back-to-top.js"></script>
-    <script type="text/javascript" src="/javascripts/smoothScroll.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery.backstretch.min.js"></script>
-    <!-- JS Customization -->
-    <script type="text/javascript" src="/javascripts/custom.js"></script>
-    <!-- JS Page Level -->
-    <script type="text/javascript" src="/javascripts/app.js"></script>
-
     <%= javascript_include_tag :all %>
 
     <!--[if lt IE 9]>
-    <script src="/javascripts/respond.js"></script>
-    <script src="/javascripts/html5shiv.js"></script>
-    <script src="/javascripts/placeholder-IE-fixes.js"></script>
+    <%= javascript_include_tag :ie %>
     <![endif]-->
 
   </body>

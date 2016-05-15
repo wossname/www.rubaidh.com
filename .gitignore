@@ -8,11 +8,15 @@
 /.bundle
 
 # Ignore the build directory
+/intermediate
 /build
 
 # Ignore cache
 /.sass-cache
 /.cache
+
+# Ignore node modules
+/node_modules
 
 # Ignore .DS_store file
 .DS_Store
