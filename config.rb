@@ -2,6 +2,20 @@
 config[:domain]                  = 'rubaidh.com'
 config[:www_prefix]              = true
 config[:cloudfront_distribution] = 'E1STMQ3FOGJ7AN'
+config[:twitter_owner]           = 'rubaidh'
+config[:twitter_creator]         = 'mathie'
+config[:fb_app_id]               = ''
+
+# Generic metadata
+config[:short_title]   = 'Rubaidh Ltd'
+config[:long_title]    = "#{config[:short_title]}: Scottish for Ruby on Rails"
+config[:description]   = "Rubaidh was a software development consultancy specialising in Ruby on Rails development."
+config[:company]       = 'Wossname Industries'
+config[:company_url]   = 'https://woss.name/'
+config[:site_category] = "Software Development"
+config[:site_tags]     = ['Ruby', 'Rails', 'Ruby on Rails', 'Software Development',
+                          'Consultancy', 'Freelance', 'Contractor', 'Design',
+                          'Deployment', 'Scotland', 'Scottish']
 
 # UTM-related bits
 config[:default_utm_medium]   = 'website'
@@ -12,6 +26,8 @@ config[:hostname]           = config[:www_prefix] ? "www.#{config[:domain]}" : c
 config[:url]                = "https://#{config[:hostname]}"
 config[:email_address]      = "hello@#{config[:domain]}"
 config[:default_utm_source] = config[:domain]
+config[:gravatar]           = "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest(config[:email_address])}"
+config[:copyright]          = "Copyright &copy; 2015-#{Time.now.year} #{config[:author]}. All rights reserved."
 
 # Pages with no layout
 page '/*.xml', layout: false
@@ -92,6 +108,34 @@ helpers do
     else
       link_to title, url, options
     end
+  end
+
+  def title_meta
+    current_page.data.title || config[:long_title]
+  end
+
+  def description_meta
+    current_page.data.description || config[:description]
+  end
+
+  def category_meta
+    current_page.data.category || config[:site_category]
+  end
+
+  def tags_meta
+    (current_page.data.tags || []) + (config[:site_tags] || [])
+  end
+
+  def published_at_meta
+    current_page.data.published_at || Time.now
+  end
+
+  def updated_at_meta
+    current_page.data.updated_at || published_at_meta
+  end
+
+  def url_meta
+    "#{config[:url]}#{current_page.url}"
   end
 
   def xml_timestamp(dateish = Time.now)

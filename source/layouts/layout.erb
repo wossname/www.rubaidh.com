@@ -3,15 +3,8 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
   <head>
-    <title><%= current_page.data.title || "Rubaidh Ltd: Scottish for Ruby on Rails" %></title>
-
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <% partial 'favicons' %>
+    <%= partial 'metadata' %>
+    <%= partial 'favicons' %>
 
     <%= stylesheet_link_tag :all %>
   </head>
