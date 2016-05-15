@@ -3,7 +3,7 @@
     "@context": "http://schema.org",
     "@type": "Organization",
     "url": "<%= config[:url] %>",
-    "logo": "<%= image_path 'rubaidh.png' %>",
+    "logo": "<%= config[:url] %><%= image_path config[:logo] %>",
     "contactPoint" : [
       {
         "@type" : "ContactPoint",

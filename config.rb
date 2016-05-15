@@ -11,6 +11,7 @@ config[:gtm_id]                  = 'GTM-MJZ86W'
 config[:short_title]   = 'Rubaidh Ltd'
 config[:long_title]    = "#{config[:short_title]}: Scottish for Ruby on Rails"
 config[:description]   = "Rubaidh was a software development consultancy specialising in Ruby on Rails development."
+config[:logo]          = 'rubaidh.png'
 config[:company]       = 'Wossname Industries'
 config[:company_url]   = 'https://woss.name/'
 config[:telephone]     = '+44 (0)7949 077744'
