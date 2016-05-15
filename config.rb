@@ -28,7 +28,7 @@ config[:related] = {
 
 # UTM-related bits
 config[:default_utm_medium]   = 'website'
-config[:default_utm_campaign] = 'Rubaidh'
+config[:default_utm_campaign] = 'rubaidh'
 
 # Calculated Configuration
 config[:hostname]           = config[:www_prefix] ? "www.#{config[:domain]}" : config[:domain]
