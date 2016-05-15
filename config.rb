@@ -5,6 +5,7 @@ config[:cloudfront_distribution] = 'E1STMQ3FOGJ7AN'
 config[:twitter_owner]           = 'rubaidh'
 config[:twitter_creator]         = 'mathie'
 config[:fb_app_id]               = '243328680374'
+config[:gtm_id]                  = 'GTM-MJZ86W'
 
 # Generic metadata
 config[:short_title]   = 'Rubaidh Ltd'
