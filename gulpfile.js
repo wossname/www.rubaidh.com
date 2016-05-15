@@ -10,9 +10,8 @@ var javascripts = {
   "all.js": [
     'assets/javascripts/jquery.min.js',
     'assets/javascripts/jquery-migrate.min.js',
-    'assets/javascripts/bootstrap.min.js',
     'assets/javascripts/jquery.backstretch.min.js',
-    'assets/javascripts/custom.js',
+    'assets/javascripts/bootstrap.min.js',
     'assets/javascripts/app.js',
     'assets/javascripts/all.js'
   ],
@@ -31,7 +30,8 @@ var stylesheets = {
     'assets/stylesheets/blocks.css',
     'assets/stylesheets/bootstrap.min.css',
     'assets/stylesheets/animate.css',
-    'assets/stylesheets/site.css'
+    'assets/stylesheets/site.css',
+    'assets/stylesheets/dark-red.css'
   ]
 };
 

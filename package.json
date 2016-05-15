@@ -5,12 +5,12 @@
   "description": "Rubaidh Ltd: Scottish for Ruby on Rails",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wossname/rubaidh.com.git"
+    "url": "git+https://github.com/wossname/www.rubaidh.com.git"
   },
   "author": "Graeme Mathieson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wossname/rubaidh.com/issues"
+    "url": "https://github.com/wossname/www.rubaidh.com/issues"
   },
   "homepage": "https://www.rubaidh.com/",
   "devDependencies": {
